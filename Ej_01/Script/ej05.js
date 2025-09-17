@@ -31,7 +31,20 @@ estudiantesAprobados.forEach(estudiantes => {
 }
 )
 
+estudiantes.forEach(estudiantes =>{
+
+    const aprobadoReal = estudiantes.calificacion >=5
+
+    if(estudiantes.aprobado != aprobadoReal){
+
+    console.warn(`⚠️ Incoherencia en el registro de 
+        ${estudiantes.nombre}: calificación = ${calificacion}, aprobado = ${estudiantes.aprobado}`)
+    }
 
 
+
+}
+
+)
 
 
