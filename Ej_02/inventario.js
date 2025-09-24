@@ -15,6 +15,8 @@ function crearProducto(nombre, precio, categoria, stock) {
 
 function filtrarPorCategoria(inventario, categoria) {
     return inventario.filter(producto => producto.categoria === categoria);
+
+
 }
 
 function listarProductosAgotados(inventario) {
@@ -32,7 +34,13 @@ function calcularValorTotalInventario(inventario) {
 export { inventario, crearProducto, filtrarPorCategoria, 
     listarProductosAgotados, calcularValorTotalInventario };
 
+function resumenInventario(inventario) {
+    const totalProductos = inventario.length;
+    const productosAgotados = listarProductosAgotados(inventario).length;
+    const valorTotal = calcularValorTotalInventario(inventario);   }
 
+
+    export default resumenInventario;
 
 
 
