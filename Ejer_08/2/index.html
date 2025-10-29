@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda dinámica</title>
+  <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+  <h1> Catálogo de productos</h1>
+
+  <section class="filtros">
+    <form id="filtros">
+      <div class="campo">
+        <label> Buscar:</label>
+        <input type="text" name="nombre" placeholder="Nombre del producto">
+      </div>
+
+      <div class="campo">
+        <label> Categoría:</label>
+        <select name="categorias">
+          <option value="todas">Todas</option>
+          <option value="Tecnologia">Tecnología</option>
+          <option value="Accesorios">Accesorios</option>
+          <option value="Fotografía">Fotografía</option>
+          <option value="Oficina">Oficina</option>
+        </select>
+      </div>
+
+      <div class="campo rango">
+        <label> Precio máximo:</label>
+        <input type="range" name="rango" min="50" max="3000" step="10" value="2000">
+        <span id="valor-rango">2000 </span>
+      </div>
+
+      <div class="campo radios">
+        <label>Ordenar por:</label>
+        <div>
+          <label><input type="radio" name="precio" value="ascendente"> Precio ↑</label>
+          <label><input type="radio" name="precio" value="descendente"> Precio ↓</label>
+          <label><input type="radio" name="precio" value="A-Z"> Nombre (A-Z)</label>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section id="contenedor-productos" class="productos"></section>
+
+  <script type="module" src="./Script.js"></script>
+</body>
+</html>
