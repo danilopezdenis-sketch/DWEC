@@ -1,0 +1,46 @@
+table {
+
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.error {
+
+    background-color: rgb(234, 119, 119);
+
+}
+
+td:last-child{
+    justify-content: center;
+    display: flex;
+}
+
+.statusEr,
+.statusOk {
+    border: 1px solid transparent;
+  display: inline-block;
+  padding: 7px 7px 10px 10px;
+  margin-top: 5px;
+  border-radius: 0px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  min-width: 50px;
+  padding-right: 10px;
+}
+
+.statusEr {
+  background-color: #dc3545;
+  color: white;
+}
+
+.statusOk {
+  background-color: #198754;
+  color: white;
+}
