@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="claro">
+
+  <div id="banner-visita" style="display:none;">
+  <span id="texto-visita"></span>
+  <button id="cerrar-banner">Cerrar</button>
+</div>
+
+
+  <header>
+    <h1>Lista de productos</h1>
+  </header>
+
+  <section class="controls">
+    <label for="filtro-categoria">Filtrar por categoría:</label>
+    <select id="filtro-categoria">
+      <option value="Todas">Todas</option>
+    </select>
+
+    <button id="orden-menor">Menor → Mayor precio</button>
+    <button id="orden-mayor">Mayor → Menor precio</button>
+
+    <button id="claro">Tema claro</button>
+    <button id="oscuro">Tema oscuro</button>
+  </section>
+
+  <main id="contenedor-productos">
+    <p id="mensaje-cargando">Cargando…</p>
+  </main>
+
+  <section id="carrito">
+    <h2>Carrito</h2>
+    <div id="contenedor-carrito"></div>
+    <button id="vaciarCarrito">Vaciar carrito</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
