@@ -1,0 +1,153 @@
+<<<<<<< HEAD
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gestión Usuarios - Ejercicio 3</title>
+
+</head>
+<body>
+
+  <h1>Gestión Usuarios — Ejercicio 3</h1>
+
+  <button id="btnIniciales">Cargar Usuarios Iniciales</button>
+  <input type="text" id="search" placeholder="Buscar por nombre/apellidos">
+
+  <div id="loading">Cargando…</div>
+  <div id="messages"></div>
+
+  <h2>Añadir / Editar Usuario</h2>
+  <form id="userForm" novalidate>
+    <input type="hidden" id="editingId" value="">
+    <div><input id="firstName" placeholder="Nombre" required></div>
+    <div><input id="lastName" placeholder="Apellido" required></div>
+    <div><input id="email" type="email" placeholder="Email" required></div>
+    <div><input id="picture" type="url" placeholder="URL imagen" required></div>
+    <div style="margin-top:8px;">
+      <button id="submitBtn" type="submit">Guardar</button>
+      <button id="cancelBtn" type="button" class="hidden">Cancelar</button>
+    </div>
+  </form>
+
+  <h2>Usuarios</h2>
+  <table>
+    <thead>
+      <tr><th>Foto</th><th>Nombre</th><th>Apellido</th><th>Email</th><th>Calificaciones</th><th>Acciones</th></tr>
+    </thead>
+    <tbody id="userList"></tbody>
+  </table>
+
+
+  <div id="gradesModal" class="hidden">
+    <div class="modal-backdrop" id="modalBackdrop" style="display:none;">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <h3 id="modalTitle">Calificaciones — <span id="modalUserName"></span></h3>
+
+        <div class="field">
+          <label>Matemáticas <input id="grade-math" type="number" min="0" max="10" step="0.1"></label>
+        </div>
+        <div class="field">
+          <label>Historia <input id="grade-history" type="number" min="0" max="10" step="0.1"></label>
+        </div>
+        <div class="field">
+          <label>Ciencia <input id="grade-science" type="number" min="0" max="10" step="0.1"></label>
+        </div>
+        <div class="field">
+          <label>Inglés <input id="grade-english" type="number" min="0" max="10" step="0.1"></label>
+        </div>
+        <div class="field">
+          <label>Arte <input id="grade-art" type="number" min="0" max="10" step="0.1"></label>
+        </div>
+
+        <div id="gradesError" class="error"></div>
+
+        <div class="actions">
+          <button id="saveGradesBtn">Guardar Calificaciones</button>
+          <button id="clearGradesBtn">Borrar Calificaciones</button>
+          <button id="closeGradesBtn">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Script.js"></script>
+</body>
+</html>
+=======
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gestión Usuarios - Ejercicio 3</title>
+
+</head>
+<body>
+
+  <h1>Gestión Usuarios — Ejercicio 3</h1>
+
+  <button id="btnIniciales">Cargar Usuarios Iniciales</button>
+  <input type="text" id="search" placeholder="Buscar por nombre/apellidos">
+
+  <div id="loading">Cargando…</div>
+  <div id="messages"></div>
+
+  <h2>Añadir / Editar Usuario</h2>
+  <form id="userForm" novalidate>
+    <input type="hidden" id="editingId" value="">
+    <div><input id="firstName" placeholder="Nombre" required></div>
+    <div><input id="lastName" placeholder="Apellido" required></div>
+    <div><input id="email" type="email" placeholder="Email" required></div>
+    <div><input id="picture" type="url" placeholder="URL imagen" required></div>
+    <div style="margin-top:8px;">
+      <button id="submitBtn" type="submit">Guardar</button>
+      <button id="cancelBtn" type="button" class="hidden">Cancelar</button>
+    </div>
+  </form>
+
+  <h2>Usuarios</h2>
+  <table>
+    <thead>
+      <tr><th>Foto</th><th>Nombre</th><th>Apellido</th><th>Email</th><th>Calificaciones</th><th>Acciones</th></tr>
+    </thead>
+    <tbody id="userList"></tbody>
+  </table>
+
+
+  <div id="gradesModal" class="hidden">
+    <div class="modal-backdrop" id="modalBackdrop" style="display:none;">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <h3 id="modalTitle">Calificaciones — <span id="modalUserName"></span></h3>
+
+        <div class="field">
+          <label>Matemáticas <input id="grade-math" type="number" min="0" max="10" step="0.1"></label>
+        </div>
+        <div class="field">
+          <label>Historia <input id="grade-history" type="number" min="0" max="10" step="0.1"></label>
+        </div>
+        <div class="field">
+          <label>Ciencia <input id="grade-science" type="number" min="0" max="10" step="0.1"></label>
+        </div>
+        <div class="field">
+          <label>Inglés <input id="grade-english" type="number" min="0" max="10" step="0.1"></label>
+        </div>
+        <div class="field">
+          <label>Arte <input id="grade-art" type="number" min="0" max="10" step="0.1"></label>
+        </div>
+
+        <div id="gradesError" class="error"></div>
+
+        <div class="actions">
+          <button id="saveGradesBtn">Guardar Calificaciones</button>
+          <button id="clearGradesBtn">Borrar Calificaciones</button>
+          <button id="closeGradesBtn">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Script.js"></script>
+</body>
+</html>
+>>>>>>> d5f0a4d0878fe51a55bd968ef99f573f19e5b1c8

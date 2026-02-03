@@ -1,0 +1,7 @@
+<modulo>
+  <titulo>Soporte Vital</titulo>
+  <descripcion>Control de oxígeno, temperatura y presión de la estación.</descripcion>
+  <imagen>img/soporte_vital.jpg</imagen>
+  <siguiente>inventario.xml</siguiente>
+  <anterior></anterior>
+</modulo>

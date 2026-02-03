@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0f1a;
+  color: #e2e8f0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #1e293b;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+#panel {
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #1e293b;
+  border-radius: 10px;
+  width: 80%;
+  transition: opacity 0.5s;
+}
+
+#panel img {
+  max-width: 300px;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+#controles button {
+  background: #334155;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#controles button:hover {
+  background: #475569;
+}
+
+form {
+  background: #1e293b;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 60%;
+  margin: 2rem auto;
+}
+
+input, select {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+}
+
+button[type="submit"] {
+  background: #2563eb;
+}
+
+output {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#btn {
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+
+}
+
+#btn.visible {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+
+.panel-drag {
+  position: absolute;       
+  left: 20px;
+  top: 120px;
+  padding: 8px 12px;
+  background: #111827;
+  color: #fff;
+  border-radius: 6px;
+  cursor: grab;
+  user-select: none;
+  z-index: 9999;
+  transition: opacity 0.2s ease;
+
+}
+
+

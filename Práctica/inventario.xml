@@ -1,0 +1,7 @@
+<modulo>
+  <titulo>Inventario</titulo>
+  <descripcion>Gestión de suministros y materiales de la estación.</descripcion>
+  <imagen>img/inventario.jpg</imagen>
+  <siguiente>tripulacion.xml</siguiente>
+  <anterior>soporte_vital.xml</anterior>
+</modulo>

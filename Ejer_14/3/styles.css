@@ -1,0 +1,165 @@
+<<<<<<< HEAD
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f2f2f2;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.tarjeta h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.tarjeta p {
+  margin: 0.25rem 0;
+}
+
+#mensaje-cargando {
+  text-align: center;
+  font-weight: bold;
+}
+
+body.claro {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+body.oscuro {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.oscuro .tarjeta {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.oscuro button {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+#banner-visita {
+  background-color: #ffd966;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+=======
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f2f2f2;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.tarjeta h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.tarjeta p {
+  margin: 0.25rem 0;
+}
+
+#mensaje-cargando {
+  text-align: center;
+  font-weight: bold;
+}
+
+body.claro {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+body.oscuro {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.oscuro .tarjeta {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.oscuro button {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+#banner-visita {
+  background-color: #ffd966;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+>>>>>>> d5f0a4d0878fe51a55bd968ef99f573f19e5b1c8

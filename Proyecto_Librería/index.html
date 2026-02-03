@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tienda</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <select id="filtroMarca">
+    <option value="">Marcas</option>
+    <option value="marca1">Marca 1</option>
+    <option value="marca2">Marca 2</option>
+</select>
+
+<select id="filtroCategoria">
+    <option value="">Categorías</option>
+    <option value="cat1">Cat 1</option>
+    <option value="cat2">Cat 2</option>
+</select>
+
+<input type="text" id="busqueda" placeholder="Buscar...">
+
+
+    <div class="actions">
+        <button class="btn-icon" id="btnUsuario">👤 Usuario</button>
+        <button class="btn-icon" id="btnCarrito">🛒 Carrito</button>
+    </div>
+</header>
+
+<section class="productos"></section>
+
+<div class="modal" id="modalDetalles">
+    <div class="modal-content"></div>
+</div>
+
+<div class="modal" id="modalCarrito">
+    <div class="modal-content"></div>
+</div>
+
+<div class="modal" id="modalLogin">
+    <div class="modal-content">
+        <span class="close">X</span>
+        <h2>Iniciar sesión</h2>
+        <label>Usuario</label>
+        <input type="text">
+        <label>Contraseña</label>
+        <input type="password">
+        <button>Entrar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

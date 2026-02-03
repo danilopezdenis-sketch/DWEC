@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de Control - Estación Espacial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Centro de Control</h1>
+    <p id="info-navegador"></p>
+  </header>
+
+  <main>
+    <section id="panel"></section>
+
+    <div id="controles">
+      <button id="btn-anterior">⏮️ Anterior</button>
+      <button id="btn-siguiente">⏭️ Siguiente</button>
+    </div>
+
+    <section id="formulario">
+      <h2>Registrar Aviso Interno</h2>
+      <form id="form-aviso">
+        <label for="mensaje">Mensaje:</label>
+        <input type="text" id="mensaje" required>
+
+        <label for="prioridad">Prioridad:</label>
+        <select id="prioridad">
+          <option value="alta">Alta</option>
+          <option value="media">Media</option>
+          <option value="baja">Baja</option>
+        </select>
+
+        <button type="submit">Guardar Aviso</button>
+      </form>
+
+      <div id="avisos"></div>
+
+      <output id="salida"></output>
+    </section>
+  </main>
+
+  <footer>
+    <p>Sistema de control de módulos - 2025</p>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

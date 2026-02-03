@@ -1,0 +1,7 @@
+<modulo>
+  <titulo>Tripulación</titulo>
+  <descripcion>Información y estado de los miembros de la tripulación.</descripcion>
+  <imagen>img/tripulacion.jpg</imagen>
+  <siguiente></siguiente>
+  <anterior>inventario.xml</anterior>
+</modulo>
