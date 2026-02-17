@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+</head>
+<body>
+  <h1>Panel de Control de <%= user.username %></h1>
+
+  <h2>Editar Perfil</h2>
+  <form action="/links/edit/<%= user.id %>" method="POST">
+    <label>Email:</label><br>
+    <input type="email" name="email" value="<%= user.email %>" required><br>
+    <label>Bio:</label><br>
+    <textarea name="bio"><%= user.bio %></textarea><br>
+    <button type="submit">Actualizar Perfil</button>
+  </form>
+
+  <h2>Proyectos</h2>
+  <%- include('partials/project-form') %>
+
+  <ul>
+    <% projects.forEach(project => { %>
+      <li>
+        <strong><%= project.title %></strong> - <%= project.description %><br>
+        <a href="<%= project.repo_url %>" target="_blank">Repo</a> | 
+        <a href="<%= project.live_url %>" target="_blank">Demo</a>
+        <form action="/projects/delete/<%= project.id %>" method="POST" style="display:inline;">
+          <button type="submit">Borrar</button>
+        </form>
+      </li>
+    <% }) %>
+  </ul>
+
+  <h2>Enlaces Sociales</h2>
+  <%- include('partials/link-form') %>
+
+  <ul>
+    <% links.forEach(link => { %>
+      <li>
+        <strong><%= link.platform %>:</strong> <a href="<%= link.url %>" target="_blank"><%= link.url %></a>
+        <form action="/links/delete/<%= link.id %>" method="POST" style="display:inline;">
+          <button type="submit">Borrar</button>
+        </form>
+      </li>
+    <% }) %>
+  </ul>
+
+  <p><a href="/portfolio/<%= user.username %>">Ver portafolio público</a></p>
+</body>
+</html>

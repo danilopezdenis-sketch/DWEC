@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portafolio de <%= user.username %></title>
+</head>
+<body>
+  <h1><%= user.username %></h1>
+  <p><strong>Email:</strong> <%= user.email %></p>
+  <p><strong>Bio:</strong> <%= user.bio %></p>
+
+  <h2>Proyectos</h2>
+  <ul>
+    <% projects.forEach(project => { %>
+      <li>
+        <strong><%= project.title %></strong> - <%= project.description %><br>
+        <a href="<%= project.repo_url %>" target="_blank">Repo</a> | 
+        <a href="<%= project.live_url %>" target="_blank">Demo</a>
+      </li>
+    <% }) %>
+  </ul>
+
+  <h2>Enlaces Sociales</h2>
+  <ul>
+    <% links.forEach(link => { %>
+      <li><strong><%= link.platform %>:</strong> <a href="<%= link.url %>" target="_blank"><%= link.url %></a></li>
+    <% }) %>
+  </ul>
+
+  <% if (isOwner) { %>
+    <p><a href="/dashboard">Gestionar mi portafolio</a></p>
+  <% } %>
+</body>
+</html>

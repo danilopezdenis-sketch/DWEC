@@ -2,14 +2,12 @@ const mysql = require('mysql2');
 require('dotenv').config();
 
 const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
+  host: 'database-2.cufrfwocjurf.us-east-1.rds.amazonaws.com',
+  user: 'admin',
   password: 'kiva59_D',
-  database: 'Biblioteca',
-  port: 3306,
-  waitForConnections: true,
-  connectionLimit: 10
+  database: 'biblioteca',
 });
+
 
 pool.getConnection((err, connection) => {
   if (err) {
